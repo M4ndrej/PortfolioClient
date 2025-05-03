@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    --title: 'Montserrat', 'sans-serif';
+    --text: 'Raleway', 'sans-serif';
+
+    font-family: var(--text);
+}
+
+
+@media (max-width: 768px){
+
+    .navBar{
+        visibility: hidden;
+    }
+
+    .burgerMenu{
+        display: flex;
+    }
+
+    .navLink{
+        visibility: hidden;
+        position: fixed;
+        top:0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(100%);
+        transition: all .3s ease-in-out;
+        z-index: 1;
+    }
+
+    .navLink li a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    .navLink.show{
+        visibility: visible;
+        transform: translateX(0);
+        transition: all .3s ease-in-out;
+    }
+
+    .hero-container{
+        width: 100% !important;
+    }
+
+    .heroImage{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .expCardDetails{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-container{
+        width: 100% !important;
+    }
+
+    .aboutImage{
+        width: 80%;
+        height: 200px;
+        margin: 0 auto !important;
+    }
+
+    .aboutCard {
+        max-width: 90%;
+        margin: 10px auto;
+      }
+    
+}
