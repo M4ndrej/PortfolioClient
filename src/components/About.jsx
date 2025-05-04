@@ -87,7 +87,7 @@ export default function About() {
                 </div>
               </Col>
             </Row>
-            <p>
+            <p className="px-2">
               I am a final-year IT student at the University of Belgrade,
               passionate about technology and software development. I have
               experience working with web technologies, backend development, and

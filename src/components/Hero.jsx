@@ -17,18 +17,18 @@ export default function Hero() {
       imageRef.current,
       { y: 100, opacity: 0 }, // Početna pozicija sa leve strane
       {
-        y: 0,                // Završna pozicija (na svom mestu)
-        opacity: 1,          // Povećava se vidljivost
-        duration: 1,       // Brzina animacije
+        y: 0, // Završna pozicija (na svom mestu)
+        opacity: 1, // Povećava se vidljivost
+        duration: 1, // Brzina animacije
       }
     );
     gsap.fromTo(
       divRef.current,
       { y: 100, opacity: 0 }, // Početna pozicija sa leve strane
       {
-        y: 0,                // Završna pozicija (na svom mestu)
-        opacity: 1,          // Povećava se vidljivost
-        duration: 1,       // Brzina animacije
+        y: 0, // Završna pozicija (na svom mestu)
+        opacity: 1, // Povećava se vidljivost
+        duration: 1, // Brzina animacije
       }
     );
   }, []);
@@ -59,14 +59,18 @@ export default function Hero() {
             <h2>Andrej Maksimovic</h2>
             <h4>Full Stack Developer</h4>
             <div className="d-flex justify-content-center gap-3">
-              <button className="heroButtonLight">Download CV</button>
-              <button className="heroButtonDark">Contact Info</button>
+              <a href="" className="heroButtonLight">Download CV</a>
+              <a href = "/#contact"
+                className="heroButtonDark"
+              >
+                Contact Info
+              </a>
             </div>
             <div className="d-flex justify-content-center gap-2 text-xl icon">
-              <a href="" className="hero-icon">
+              <a href="https://github.com/M4ndrej" className="hero-icon">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="" className="hero-icon">
+              <a href="https://www.linkedin.com/in/andrej-maksimovic-43a507275/" className="hero-icon">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
