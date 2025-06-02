@@ -59,7 +59,7 @@ export default function Hero() {
             <h2>Andrej Maksimovic</h2>
             <h4>Full Stack Developer</h4>
             <div className="d-flex justify-content-center gap-3">
-              <a href="" className="heroButtonLight">Download CV</a>
+              <a href="/CV.pdf" className="heroButtonLight" download>Download CV</a>
               <a href = "/#contact"
                 className="heroButtonDark"
               >
